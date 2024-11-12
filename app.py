@@ -14,9 +14,7 @@ app = Flask(__name__)
 def home():
 	return render_template('main.html')
 
-@app.route('/quick-result')
-def quick_result():
-    return render_template('result.html', prediction=0)
+
 
 
 @app.route('/predict', methods=['GET','POST'])
